@@ -1,0 +1,1179 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(239, 245, 252);
+  font-family: "Times New Roman", Times, serif;
+}
+
+.blog-pic {
+  background-image: url(images.jfif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 30vh;
+  position: relative;
+  overflow: scroll;
+}
+
+@media screen and (max-width: 767px) {
+  .blog-nav__list {
+    display: none;
+  }
+
+  .blog-about__text {
+    display: none;
+  }
+
+  .blog-footer2 {
+    display: none;
+  }
+
+  .combinationof1 {
+    display: none;
+  }
+
+  .blog-nav {
+    padding: 10px 1rem;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .blog-nav__header {
+    font-weight: bold;
+  }
+
+  .blog-nav__list2 {
+    color: gray;
+    font-weight: 800;
+  }
+
+  .blog-about {
+    background-color: aliceblue;
+    opacity: 85%;
+    padding: 10px;
+    width: 45%;
+    position: absolute;
+    top: 10rem;
+    left: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .blog-about__header {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(64, 64, 246);
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: -0.6px;
+    margin-bottom: 5px;
+  }
+
+  .blog-about__supheader {
+    font-weight: 900;
+    font-size: 1.1rem;
+    margin-block: 5px;
+    letter-spacing: -0.8px;
+  }
+
+  .blog-about__text2 {
+    color: rgb(130, 130, 130);
+    font-size: 11px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 10px;
+  }
+
+  .blog-about__btn {
+    font-size: 10px;
+    padding: 6px 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(68, 68, 235);
+    color: white;
+    display: flex;
+    align-self: flex-start;
+  }
+
+  .blog-article {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .blog-article__header {
+    font-weight: 900;
+    font-size: 1.1rem;
+    margin-block: 5px;
+    letter-spacing: -0.8px;
+  }
+
+  .blog-article__supheader {
+    color: rgb(130, 130, 130);
+    font-size: 11px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .blog-card {
+    gap: 2.2rem;
+    display: flex;
+    flex-direction: column;
+    padding-inline: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .blog-card__mountain {
+    display: flex;
+  }
+
+  .blog-card__mountain__pic {
+    width: 30%;
+  }
+
+  .blog-card__mountain__text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 8px;
+  }
+
+  .blog-card__mountain__text__header {
+    font-weight: bold;
+    font-size: 12px;
+  }
+
+  .blog-card__mountain__text__supheader {
+    color: rgb(97, 95, 95);
+    font-weight: bold;
+    font-size: 12px;
+  }
+
+  .blog-card__mountain__link {
+    text-decoration: none;
+    color: rgb(72, 72, 255);
+    font-size: 11px;
+    font-weight: bold;
+  }
+
+  .blog-card__city {
+    display: flex;
+  }
+
+  .blog-card__city__pic {
+    width: 30%;
+  }
+
+  .blog-card__city__text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 8px;
+  }
+
+  .blog-card__city__text__header {
+    font-weight: bold;
+    font-size: 12px;
+  }
+
+  .blog-card__city__text__supheader {
+    color: rgb(97, 95, 95);
+    font-weight: bold;
+    font-size: 12px;
+  }
+
+  .blog-card__city__link {
+    text-decoration: none;
+    color: rgb(72, 72, 255);
+    font-size: 11px;
+    font-weight: bold;
+  }
+
+  .blog-card__beach {
+    display: flex;
+  }
+
+  .blog-card__beach__pic {
+    width: 30%;
+  }
+
+  .blog-card__beach__text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 8px;
+  }
+
+  .blog-card__beach__text__header {
+    font-weight: bold;
+    font-size: 12px;
+  }
+
+  .blog-card__beach__text__supheader {
+    color: rgb(97, 95, 95);
+    font-weight: bold;
+    font-size: 12px;
+  }
+
+  .blog-card__beach__link {
+    text-decoration: none;
+    color: rgb(72, 72, 255);
+    font-size: 11px;
+    font-weight: bold;
+  }
+
+  .blog-card__food {
+    display: flex;
+  }
+
+  .blog-card__food__pic {
+    width: 30%;
+  }
+
+  .blog-card__food__text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 8px;
+  }
+
+  .blog-card__food__text__header {
+    font-weight: bold;
+    font-size: 12px;
+  }
+
+  .blog-card__food__text__supheader {
+    color: rgb(97, 95, 95);
+    font-weight: bold;
+    font-size: 12px;
+  }
+
+  .blog-card__food__link {
+    text-decoration: none;
+    color: rgb(72, 72, 255);
+    font-size: 11px;
+    font-weight: bold;
+  }
+
+  .blog-card__travel {
+    display: flex;
+  }
+
+  .blog-card__travel__pic {
+    width: 30%;
+  }
+
+  .blog-card__travel__text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 8px;
+  }
+
+  .blog-card__travel__text__header {
+    font-weight: bold;
+    font-size: 12px;
+  }
+
+  .blog-card__travel__text__supheader {
+    color: rgb(97, 95, 95);
+    font-weight: bold;
+    font-size: 12px;
+  }
+
+  .blog-card__travel__link {
+    text-decoration: none;
+    color: rgb(72, 72, 255);
+    font-size: 11px;
+    font-weight: bold;
+  }
+
+  .blog-card__autumn {
+    display: flex;
+  }
+
+  .blog-card__autumn__pic {
+    width: 30%;
+  }
+
+  .blog-card__autumn__text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 8px;
+  }
+
+  .blog-card__autumn__text__header {
+    font-weight: bold;
+    font-size: 12px;
+  }
+
+  .blog-card__autumn__text__supheader {
+    color: rgb(97, 95, 95);
+    font-weight: bold;
+    font-size: 12px;
+  }
+
+  .blog-card__autumn__link {
+    text-decoration: none;
+    color: rgb(72, 72, 255);
+    font-size: 11px;
+    font-weight: bold;
+  }
+
+  .blog-footer {
+    padding: 1rem;
+    background-color: black;
+    color: white;
+  }
+
+  .blog-footer__text {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 0.8rem;
+  }
+
+  .blog-footer__text__bold {
+    font-weight: bold;
+    font-size: 1.1rem;
+  }
+
+  .blog-footer__text__gray {
+    color: rgb(182, 181, 181);
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .blog-footer__list {
+    display: flex;
+    gap: 10px;
+    list-style-type: none;
+    color: rgb(182, 181, 181);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    justify-content: center;
+    margin-block: 6px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .blog-nav__list2 {
+    display: none;
+  }
+
+  .blog-about__text2 {
+    display: none;
+  }
+
+  .blog-footer {
+    display: none;
+  }
+
+  .combinationof1 {
+    display: none;
+  }
+
+  .blog-nav {
+    padding: 10px 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .blog-nav__header {
+    font-weight: bold;
+  }
+
+  .blog-nav__list {
+    display: flex;
+    list-style-type: none;
+    gap: 1rem;
+    color: rgb(95, 94, 94);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+  }
+
+  .blog-about {
+    background-color: aliceblue;
+    opacity: 85%;
+    padding: 10px;
+    width: 35%;
+    height: 60%;
+    position: absolute;
+    top: 7rem;
+    left: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  .blog-about__header {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(85, 85, 241);
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: -0.6px;
+    margin-bottom: 5px;
+  }
+
+  .blog-about__supheader {
+    font-weight: 900;
+    font-size: 1.1rem;
+    margin-block: 5px;
+    letter-spacing: -0.8px;
+  }
+
+  .blog-about__text {
+    color: rgb(130, 130, 130);
+    font-size: 11px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 10px;
+  }
+
+  .blog-about__btn {
+    font-size: 10px;
+    padding: 6px 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(97, 192, 255);
+    color: white;
+    display: flex;
+    align-self: flex-start;
+  }
+
+  .blog-article {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .blog-article__header {
+    font-weight: 900;
+    font-size: 1.1rem;
+    margin-block: 5px;
+    letter-spacing: -0.8px;
+  }
+
+  .blog-article__supheader {
+    color: rgb(130, 130, 130);
+    font-size: 11px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .blog-card {
+    gap: 2.2rem;
+    display: flex;
+    flex-direction: column;
+    padding-inline: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .combine2a {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .blog-card__mountain {
+    display: flex;
+    flex-direction: column;
+    border: rgb(197, 197, 197) 1px solid;
+  }
+
+  .blog-card__mountain__pic {
+    width: 95%;
+    margin: 0.6rem;
+  }
+
+  .blog-card__mountain__text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 8px;
+  }
+
+  .blog-card__mountain__text__header {
+    font-weight: bold;
+    font-size: 12px;
+  }
+
+  .blog-card__mountain__text__supheader {
+    color: rgb(97, 95, 95);
+    font-weight: bold;
+    font-size: 12px;
+  }
+
+  .blog-card__mountain__link {
+    text-decoration: none;
+    color: rgb(72, 72, 255);
+    font-size: 11px;
+    font-weight: bold;
+  }
+
+  .blog-card__city {
+    display: flex;
+    flex-direction: column;
+    border: rgb(197, 197, 197) 1px solid;
+  }
+
+  .blog-card__city__pic {
+    width: 95%;
+    margin: 0.6rem;
+  }
+
+  .blog-card__city__text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 8px;
+  }
+
+  .blog-card__city__text__header {
+    font-weight: bold;
+    font-size: 12px;
+  }
+
+  .blog-card__city__text__supheader {
+    color: rgb(97, 95, 95);
+    font-weight: bold;
+    font-size: 12px;
+  }
+
+  .blog-card__city__link {
+    text-decoration: none;
+    color: rgb(72, 72, 255);
+    font-size: 11px;
+    font-weight: bold;
+  }
+
+  .combine2b {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .blog-card__beach {
+    display: flex;
+    flex-direction: column;
+    border: rgb(197, 197, 197) 1px solid;
+  }
+
+  .blog-card__beach__pic {
+    width: 95%;
+    margin: 0.6rem;
+  }
+
+  .blog-card__beach__text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 8px;
+  }
+
+  .blog-card__beach__text__header {
+    font-weight: bold;
+    font-size: 12px;
+  }
+
+  .blog-card__beach__text__supheader {
+    color: rgb(97, 95, 95);
+    font-weight: bold;
+    font-size: 12px;
+  }
+
+  .blog-card__beach__link {
+    text-decoration: none;
+    color: rgb(72, 72, 255);
+    font-size: 11px;
+    font-weight: bold;
+  }
+
+  .blog-card__food {
+    display: flex;
+    flex-direction: column;
+    border: rgb(197, 197, 197) 1px solid;
+  }
+
+  .blog-card__food__pic {
+    width: 95%;
+    margin: 0.6rem;
+  }
+
+  .blog-card__food__text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 8px;
+  }
+
+  .blog-card__food__text__header {
+    font-weight: bold;
+    font-size: 12px;
+  }
+
+  .blog-card__food__text__supheader {
+    color: rgb(97, 95, 95);
+    font-weight: bold;
+    font-size: 12px;
+  }
+
+  .blog-card__food__link {
+    text-decoration: none;
+    color: rgb(72, 72, 255);
+    font-size: 11px;
+    font-weight: bold;
+  }
+
+  .combine2c {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .blog-card__travel {
+    display: flex;
+    flex-direction: column;
+    border: rgb(197, 197, 197) 1px solid;
+  }
+
+  .blog-card__travel__pic {
+    width: 95%;
+    margin-bottom: 0.6rem;
+  }
+
+  .blog-card__travel__text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 8px;
+  }
+
+  .blog-card__travel__text__header {
+    font-weight: bold;
+    font-size: 12px;
+  }
+
+  .blog-card__travel__text__supheader {
+    color: rgb(97, 95, 95);
+    font-weight: bold;
+    font-size: 12px;
+  }
+
+  .blog-card__travel__link {
+    text-decoration: none;
+    color: rgb(72, 72, 255);
+    font-size: 11px;
+    font-weight: bold;
+  }
+
+  .blog-card__autumn {
+    display: flex;
+    flex-direction: column;
+    border: rgb(197, 197, 197) 1px solid;
+  }
+
+  .blog-card__autumn__pic {
+    width: 95%;
+    margin-bottom: 0.6rem;
+  }
+
+  .blog-card__autumn__text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 8px;
+  }
+
+  .blog-card__autumn__text__header {
+    font-weight: bold;
+    font-size: 12px;
+  }
+
+  .blog-card__autumn__text__supheader {
+    color: rgb(97, 95, 95);
+    font-weight: bold;
+    font-size: 12px;
+  }
+
+  .blog-card__autumn__link {
+    text-decoration: none;
+    color: rgb(72, 72, 255);
+    font-size: 11px;
+    font-weight: bold;
+  }
+
+  .blog-footer2 {
+    padding: 1rem;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+  }
+
+  .blog-footer2__text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .blog-footer2__text__bold {
+    font-weight: bold;
+    font-size: 1.1rem;
+  }
+
+  .blog-footer2__list {
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    color: rgb(187, 186, 186);
+  }
+
+  .blog-footer2__text__gray {
+    color: rgb(182, 181, 181);
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .combinationof2 {
+    display: none;
+  }
+
+  .blog-nav__list2 {
+    display: none;
+  }
+
+  .blog-about__text2 {
+    display: none;
+  }
+
+  .blog-footer {
+    display: none;
+  }
+
+  .blog-nav {
+    padding: 10px 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .blog-nav__header {
+    font-weight: bold;
+  }
+
+  .blog-nav__list {
+    display: flex;
+    list-style-type: none;
+    gap: 1rem;
+    color: rgb(95, 94, 94);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+  }
+
+  .blog-about {
+    background-color: aliceblue;
+    opacity: 85%;
+    padding: 10px;
+    width: 35%;
+    height: 60%;
+    position: absolute;
+    top: 7rem;
+    left: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  .blog-about__header {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(85, 85, 241);
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: -0.6px;
+    margin-bottom: 5px;
+  }
+
+  .blog-about__supheader {
+    font-weight: 900;
+    font-size: 1.1rem;
+    margin-block: 5px;
+    letter-spacing: -0.8px;
+  }
+
+  .blog-about__text {
+    color: rgb(130, 130, 130);
+    font-size: 11px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 10px;
+  }
+
+  .blog-about__btn {
+    font-size: 10px;
+    padding: 6px 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(97, 192, 255);
+    color: white;
+    display: flex;
+    align-self: flex-start;
+  }
+
+  .blog-article {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .blog-article__header {
+    font-weight: 900;
+    font-size: 1.1rem;
+    margin-block: 5px;
+    letter-spacing: -0.8px;
+  }
+
+  .blog-article__supheader {
+    color: rgb(130, 130, 130);
+    font-size: 11px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .blog-card {
+    gap: 2.2rem;
+    display: flex;
+    flex-direction: column;
+    padding-inline: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .combine3a {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .blog-card__mountain {
+    display: flex;
+    flex-direction: column;
+    border: rgb(197, 197, 197) 1px solid;
+  }
+
+  .blog-card__mountain__pic {
+    width: 95%;
+    margin: 0.6rem;
+  }
+
+  .blog-card__mountain__text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 8px;
+  }
+
+  .blog-card__mountain__text__header {
+    font-weight: bold;
+    font-size: 12px;
+  }
+
+  .blog-card__mountain__text__supheader {
+    color: rgb(97, 95, 95);
+    font-weight: bold;
+    font-size: 12px;
+  }
+
+  .blog-card__mountain__link {
+    text-decoration: none;
+    color: rgb(72, 72, 255);
+    font-size: 11px;
+    font-weight: bold;
+  }
+
+  .blog-card__city {
+    display: flex;
+    flex-direction: column;
+    border: rgb(197, 197, 197) 1px solid;
+  }
+
+  .blog-card__city__pic {
+    width: 95%;
+    margin: 0.6rem;
+  }
+
+  .blog-card__city__text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 8px;
+  }
+
+  .blog-card__city__text__header {
+    font-weight: bold;
+    font-size: 12px;
+  }
+
+  .blog-card__city__text__supheader {
+    color: rgb(97, 95, 95);
+    font-weight: bold;
+    font-size: 12px;
+  }
+
+  .blog-card__city__link {
+    text-decoration: none;
+    color: rgb(72, 72, 255);
+    font-size: 11px;
+    font-weight: bold;
+  }
+
+  .blog-card__beach {
+    display: flex;
+    flex-direction: column;
+    border: rgb(197, 197, 197) 1px solid;
+  }
+
+  .blog-card__beach__pic {
+    width: 95%;
+    margin: 0.6rem;
+  }
+
+  .blog-card__beach__text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 8px;
+  }
+
+  .blog-card__beach__text__header {
+    font-weight: bold;
+    font-size: 12px;
+  }
+
+  .blog-card__beach__text__supheader {
+    color: rgb(97, 95, 95);
+    font-weight: bold;
+    font-size: 12px;
+  }
+
+  .blog-card__beach__link {
+    text-decoration: none;
+    color: rgb(72, 72, 255);
+    font-size: 11px;
+    font-weight: bold;
+  }
+
+  .combine3b {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .blog-card__food {
+    display: flex;
+    flex-direction: column;
+    border: rgb(197, 197, 197) 1px solid;
+  }
+
+  .blog-card__food__pic {
+    width: 95%;
+    margin: 0.6rem;
+  }
+
+  .blog-card__food__text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 8px;
+  }
+
+  .blog-card__food__text__header {
+    font-weight: bold;
+    font-size: 12px;
+  }
+
+  .blog-card__food__text__supheader {
+    color: rgb(97, 95, 95);
+    font-weight: bold;
+    font-size: 12px;
+  }
+
+  .blog-card__food__link {
+    text-decoration: none;
+    color: rgb(72, 72, 255);
+    font-size: 11px;
+    font-weight: bold;
+  }
+
+  .blog-card__travel {
+    display: flex;
+    flex-direction: column;
+    border: rgb(197, 197, 197) 1px solid;
+  }
+
+  .blog-card__travel__pic {
+    width: 95%;
+    margin-bottom: 0.6rem;
+  }
+
+  .blog-card__travel__text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 8px;
+  }
+
+  .blog-card__travel__text__header {
+    font-weight: bold;
+    font-size: 12px;
+  }
+
+  .blog-card__travel__text__supheader {
+    color: rgb(97, 95, 95);
+    font-weight: bold;
+    font-size: 12px;
+  }
+
+  .blog-card__travel__link {
+    text-decoration: none;
+    color: rgb(72, 72, 255);
+    font-size: 11px;
+    font-weight: bold;
+  }
+
+  .blog-card__autumn {
+    display: flex;
+    flex-direction: column;
+    border: rgb(197, 197, 197) 1px solid;
+  }
+
+  .blog-card__autumn__pic {
+    width: 95%;
+    margin-bottom: 0.6rem;
+  }
+
+  .blog-card__autumn__text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 8px;
+  }
+
+  .blog-card__autumn__text__header {
+    font-weight: bold;
+    font-size: 12px;
+  }
+
+  .blog-card__autumn__text__supheader {
+    color: rgb(97, 95, 95);
+    font-weight: bold;
+    font-size: 12px;
+  }
+
+  .blog-card__autumn__link {
+    text-decoration: none;
+    color: rgb(72, 72, 255);
+    font-size: 11px;
+    font-weight: bold;
+  }
+
+  .blog-footer2 {
+    padding: 1rem;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+  }
+
+  .blog-footer2__text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .blog-footer2__text__bold {
+    font-weight: bold;
+    font-size: 1.1rem;
+  }
+
+  .blog-footer2__list {
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    color: rgb(187, 186, 186);
+  }
+
+  .blog-footer2__text__gray {
+    color: rgb(182, 181, 181);
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+}
